@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Train Times</title>
+</head>
+
+
+<body>
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Train Times</h1>
+            <p class="lead">See below for current times. If you do not see the train you're looking for, add it!</p>
+        </div>
+    </div>
+
+    <div class="row" id="table">
+        <div class="col-10">
+            <table class="table" id="train-times">
+                <thead>
+                    <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" id="1"></th>
+                        <td id="name"></td>
+                        <td id="destination"></td>
+                        <td id="frequency"></td>
+                        <td id="away"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="2"></th>
+                        <td id="name"></td>
+                        <td id="destination"></td>
+                        <td id="frequency"></td>
+                        <td id="away"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="3"></th>
+                        <td id="name"></td>
+                        <td id="destination"></td>
+                        <td id="frequency"></td>
+                        <td id="away"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="4"></th>
+                        <td id="name"></td>
+                        <td id="destination"></td>
+                        <td id="frequency"></td>
+                        <td id="away"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" id="5"></th>
+                        <td id="name"></td>
+                        <td id="destination"></td>
+                        <td id="frequency"></td>
+                        <td id="away"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-10" id="form">
+            <form>
+                <div class="train-input-form">
+                    <label for="train-name">Train Name</label>
+                    <input type="text" class="form-control" id="train-name">
+                </div>
+                <div class="destination-input-form">
+                    <label for="destination">Destination</label>
+                    <input type="text" class="form-control" id="destination-input">
+                </div>
+                <div class="first-input-form">
+                    <label for="first-time">First Train Time (HH:mm - military time)</label>
+                    <input type="text" class="form-control" id="time-input">
+                </div>
+                <div class="frequency-input-form">
+                    <label for="frequency">Frequency (min)</label>
+                    <input type="text" class="form-control" id="frequency-input">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
